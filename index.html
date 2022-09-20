@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver Element</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: #ddd;
+        }
+        .s{
+            width :2rem;
+            height: 2rem;
+            /* border: .1rem solid black; */
+            border-radius: 50%;
+        }
+        .a{
+            position: absolute;
+            margin-left: 20rem;
+            width: 4rem;
+            height: 4rem;
+            margin-top: 20rem;
+        }
+        .b{
+        
+            position: absolute;
+            margin-left: 10rem;
+            width: 3rem;
+            height: 3rem;
+            margin-top: 35rem;
+        }
+        .c{
+            position: absolute;
+            margin-left: 15rem;
+            width: 2rem;
+            height: 2rem;
+            margin-top: 22rem;
+        }
+        .d{
+            position: absolute;
+            margin-left: 50rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-top: 26rem;
+        }
+        .e{
+            position: absolute;
+            margin-left: 55rem;
+            width: 5rem;
+            height: 5rem;
+            margin-top: 30rem;
+        }
+        .f{
+            position: absolute;
+            margin-left: 30rem;
+            width: 1rem;
+            height: 1rem;
+            margin-top: 20rem;
+        }
+        .g{
+            position: absolute;
+            margin-left: 30rem;
+            width: 2.6rem;
+            height: 2.6rem;
+            margin-top: 30rem;
+        }
+        .h{
+            position: absolute;
+            margin-left: 75rem;
+            width: 5.5rem;
+            height: 5.5rem;
+            margin-top: 20rem;
+        }
+        .i{
+            position: absolute;
+            margin-left: 45rem;
+            width: 3rem;
+            height: 3rem;
+            margin-top: 30rem;
+        }
+        .a{
+            background-color: cadetblue;
+        }
+</style>
+</head>
+<body onload="abc()"> 
+    <div class="main">
+        <div class="a s"></div>
+        <div class="b s"></div>
+        <div class="c s"></div>
+        <div class="d s"></div>
+        <div class="e s"></div>
+        <div class="i s"></div>
+        <div class="f s"></div>
+        <div class="g s"></div>
+        <div class="h s"></div>
+    </div>
+    <script>
+        function abc(){
+            var a1=setInterval(() => {
+                document.querySelector(".a").style.background="lightpink";
+                document.querySelector(".a").style.border="none";
+                document.querySelector(".a").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".a").style.background="none";
+                    document.querySelector(".a").style.border="none";
+                    document.querySelector(".a").style.transition="200ms";
+    
+                }, 1000);
+            }, 2000);
+            var b1=setInterval(() => {
+                document.querySelector(".b").style.background="lightblue";
+                document.querySelector(".b").style.border="none";
+                document.querySelector(".b").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".b").style.background="none";
+                    document.querySelector(".b").style.border="none";
+                    document.querySelector(".b").style.transition="200ms";
+    
+                }, 500);
+            }, 1000);
+            var c1=setInterval(() => {
+                document.querySelector(".c").style.background="lightskyblue";
+                document.querySelector(".c").style.border="none";
+                document.querySelector(".c").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".c").style.background="none";
+                    document.querySelector(".c").style.border="none";
+                    document.querySelector(".c").style.transition="200ms";
+    
+                }, 300);
+            }, 800);
+            
+            var d1=setInterval(() => {
+                document.querySelector(".d").style.background="gray";
+                document.querySelector(".d").style.border="none";
+                document.querySelector(".d").style.opacity="0.7";
+
+                document.querySelector(".d").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".d").style.background="none";
+                    document.querySelector(".d").style.border="none";
+                    document.querySelector(".d").style.transition="200ms";
+    
+                }, 1300);
+            }, 1800);
+            var e1=setInterval(() => {
+                document.querySelector(".e").style.background="green";
+                document.querySelector(".e").style.border="none";
+                document.querySelector(".e").style.opacity="0.5";
+
+                document.querySelector(".e").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".e").style.background="none";
+                    document.querySelector(".e").style.border="none";
+                    document.querySelector(".e").style.transition="200ms";
+    
+                }, 800);
+            }, 1500);
+            var f1=setInterval(() => {
+                document.querySelector(".f").style.background="crimson";
+                document.querySelector(".f").style.border="none";
+                document.querySelector(".f").style.opacity="0.6";
+
+                document.querySelector(".f").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".f").style.background="none";
+                    document.querySelector(".f").style.border="none";
+                    document.querySelector(".f").style.transition="200ms";
+    
+                }, 700);
+            }, 1200);
+            var g1=setInterval(() => {
+                document.querySelector(".g").style.background="cadetblue";
+                document.querySelector(".g").style.border="none";
+                document.querySelector(".g").style.opacity="1";
+
+                document.querySelector(".g").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".g").style.background="none";
+                    document.querySelector(".g").style.border="none";
+                    document.querySelector(".g").style.transition="200ms";
+    
+                }, 1000);
+            }, 800);
+            var h1=setInterval(() => {
+                document.querySelector(".h").style.background="red";
+                document.querySelector(".h").style.border="none";
+                document.querySelector(".h").style.opacity=".6";
+
+                document.querySelector(".h").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".h").style.background="none";
+                    document.querySelector(".h").style.border="none";
+                    document.querySelector(".h").style.transition="200ms";
+    
+                }, 900);
+            }, 1500);
+            var i1=setInterval(() => {
+                document.querySelector(".i").style.background="orange";
+                document.querySelector(".i").style.border="none";
+                document.querySelector(".i").style.opacity=".9";
+
+                document.querySelector(".i").style.transition="400ms";
+                var a2=setTimeout(() => {
+                    document.querySelector(".i").style.background="none";
+                    document.querySelector(".i").style.border="none";
+                    document.querySelector(".i").style.transition="200ms";
+    
+                }, 1000);
+            }, 2000);
+        }
+
+    </script>
+</body>
+</html>
